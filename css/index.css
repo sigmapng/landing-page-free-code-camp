@@ -1,0 +1,12 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
