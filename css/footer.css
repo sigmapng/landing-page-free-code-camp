@@ -1,0 +1,21 @@
+#footer {
+  width: 100vw;
+  height: 30vh;
+  background-color: #d7c9aa;
+  display: flex;
+  align-items: center;
+}
+
+footer article {
+  margin-left: 25px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+article p {
+  margin: 15px;
+  font-size: 12px;
+}
