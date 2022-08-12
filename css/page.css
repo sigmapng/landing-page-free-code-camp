@@ -1,0 +1,55 @@
+.navigation {
+  position: absolute;
+  top: -100%;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.tea-leaf-logo {
+  width: 20px;
+  z-index: 10;
+}
+
+nav>a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav>a:hover {
+  color: var(--text-hover);
+  text-decoration: underline;
+  transition: 0.6s ease-in-out;
+}
+
+.header {
+  background-image: url(../img/tea-leaves-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+h1 {
+  width: 100%;
+  color: var(--heading-color);
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 3rem;
+  padding: 50px;
+  letter-spacing: 2;
+  line-height: 1.2;
+}
+
+@media (min-width:1000px) {
+  .navigation {
+    top: 0;
+  }
+}
