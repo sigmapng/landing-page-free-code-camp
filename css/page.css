@@ -10,6 +10,11 @@
   background-color: var(--bg-color);
 }
 
+#trigram-svg {
+  z-index: 40;
+  fill: black;
+}
+
 .tea-leaf-logo {
   width: 20px;
   z-index: 10;
@@ -37,25 +42,28 @@ nav>a:hover {
   align-items: flex-end;
 }
 
-h1 {
-  width: 100%;
-  color: var(--heading-color);
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 600;
-  font-size: 3rem;
-  padding: 50px;
-  letter-spacing: 2;
-  line-height: 1.2;
-}
-
 @media (min-width:1000px) {
   .navigation {
     top: 0;
   }
 }
 
-.text-emphasis {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  margin-right: 6px;
+.our-tea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+@media (min-width: 700px) {
+  .our-tea {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr;
+  }
+}
+
+.contacts-wrapper {
+  margin: 0 20px;
 }
