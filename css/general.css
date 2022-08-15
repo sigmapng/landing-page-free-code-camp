@@ -11,7 +11,7 @@ font-family: 'Roboto Mono', monospace; */
 }
 
 * {
-  font-size: 19px;
+  font-size: 15px;
 }
 
 .container {
@@ -40,6 +40,7 @@ img {
 .text-emphasis {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
+  font-size: 14px;
   margin-right: 6px;
 }
 
