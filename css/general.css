@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&family=Roboto:wght@100;300&display=swap');
 
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Mono', monospace; */
-
 :root {
   --heading-color: rgba(235, 234, 241, 0.897);
   --text-color: rgb(43, 43, 43);
-  --bg-color: #d7c9aa;
-  --text-hover: rgb(71, 92, 21);
+  --nav-bg-color: #538083;
+  --text-hover: rgb(212, 231, 233);
+  --main-bg-color: rgb(214, 191, 154);
+  --light-bg: rgb(246, 244, 245);
+  --hover-transition: 1.3s ease-in-out;
+  --word-emphasis-bg: #669a9edc;
+  --selection-color: rgba(135, 166, 179, 0.582);
 }
 
-* {
-  font-size: 15px;
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -19,10 +21,15 @@ font-family: 'Roboto Mono', monospace; */
   width: 100vw;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
+  font-size: 15px;
+  background-color: var(--light-bg);
+}
+
+::selection {
+  background-color: var(--selection-color);
 }
 
 img {
@@ -32,7 +39,7 @@ img {
 }
 
 @media (min-width:700px) {
-  * {
+  .container {
     font-size: 16px;
   }
 }
@@ -42,6 +49,25 @@ img {
   font-weight: 400;
   font-size: 14px;
   margin-right: 6px;
+  color: var(--heading-color);
+}
+
+.text-emphasis-body {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.word-emphasis {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 0.1rem 0.5rem;
+  border: none;
+  border-radius: 5%;
+  background-color: var(--word-emphasis-bg) ;
 }
 
 h1 {
@@ -62,4 +88,5 @@ h3 {
   letter-spacing: 1px;
   line-height: 1.2;
   margin-bottom: 20px;
+  color: var(--heading-color);
 }
