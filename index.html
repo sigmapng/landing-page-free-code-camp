@@ -14,31 +14,47 @@
 <body class="container">
   <header>
     <nav class="navigation">
-      <img class="tea-leaf-logo" src="img/tea-leaf.png" alt="Site logo - green tea leaf">
-      <a href="#footer"> Ми завжди на звʼязку </a>
+      <ul class="nav-links-wrap">
+        <a href="#about-us" class="nav-link">
+          <li>About us</li>
+        </a>
+        <a href="#our-tea" class="nav-link">
+          <li>Our tea</li>
+        </a>
+        <a href="#footer" class="nav-link">
+          <li>Contacts</li>
+        </a>
+      </ul>
     </nav>
     <div class="header">
+      <button type="button" class="burger-menu">☰</button>
       <h1>Мистецтво чаювання</h1>
     </div>
   </header>
   <main>
-    <div class="about-us">
-
-    </div>
-    <div class="our-tea">
-      <h3>Також у нас є усім добре відомі види</h3><span class="word-emphasis">чаю</span>
-      <section class="tea-item">
-        <img src="img/tea-longjing.webp" alt="Photo of longjing tea leaves and painting of chineese dragon">
-        <h5>Лун Цзін | Колодязь дракону</h5>
-      </section>
-      <section class="tea-item">
-        <img src="img/tea-da-hong-pao.webp" alt="Pgoto of tea leaves and painting of man in red clothing sitting">
-        <h5>Да Хун Пао | Великий червоний халат</h5>
-      </section>
-      <section class="tea-item">
-        <img src="img/tea-tie-guan-yin.webp" alt="Photo of tea leaves and painting of Tie Guan Yin">
-        <h5>Те Ґуаньїнь | Богиня милосердя</h5>
-      </section>
+    <img src="img/up-arrow.png" class="arrow-up">
+    <!-- <div class="about-us" id="about-us">
+    </div> -->
+    <div class="our-tea" id="our-tea">
+      <div class="tea-header-wrap">
+        <h3>Також у нас є усім добре відомі види <span class="word-emphasis">чаю</span> </h3>
+      </div>
+      <div class="tea-carousel">
+        <section class="tea-item">
+          <img loading="lazy" src="img/tea-longjing.webp"
+            alt="Photo of longjing tea leaves and painting of chineese dragon">
+          <h5>Лун Цзін | Колодязь дракону</h5>
+        </section>
+        <section class="tea-item">
+          <img loading="lazy" src="img/tea-da-hong-pao.webp"
+            alt="Pgoto of tea leaves and painting of man in red clothing sitting">
+          <h5>Да Хун Пао | Великий червоний халат</h5>
+        </section>
+        <section class="tea-item">
+          <img loading="lazy" src="img/tea-tie-guan-yin.webp" alt="Photo of tea leaves and painting of Tie Guan Yin">
+          <h5>Те Ґуаньїнь | Богиня милосердя</h5>
+        </section>
+      </div>
     </div>
   </main>
 
@@ -54,7 +70,10 @@
       <p><span class="text-emphasis">Телефон:</span> +38 (093) 123 45 67</p>
     </div>
   </footer>
+  <div class="modal-window">
 
+  </div>
+  <script src="index.js"></script>
 </body>
 
 </html>

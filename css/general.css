@@ -7,7 +7,7 @@
   --text-hover: rgb(212, 231, 233);
   --main-bg-color: rgb(214, 191, 154);
   --light-bg: rgb(246, 244, 245);
-  --hover-transition: 1.3s ease-in-out;
+  --hover-transition: 0.4s ease-in-out;
   --word-emphasis-bg: #669a9edc;
   --selection-color: rgba(135, 166, 179, 0.582);
 }
@@ -36,12 +36,7 @@ img {
   display: block;
   width: 100%;
   object-fit: contain;
-}
-
-@media (min-width:700px) {
-  .container {
-    font-size: 16px;
-  }
+  transition: var(--hover-transition);
 }
 
 .text-emphasis {
@@ -67,7 +62,7 @@ img {
   padding: 0.1rem 0.5rem;
   border: none;
   border-radius: 5%;
-  background-color: var(--word-emphasis-bg) ;
+  background-color: var(--word-emphasis-bg);
 }
 
 h1 {
@@ -89,4 +84,19 @@ h3 {
   line-height: 1.2;
   margin-bottom: 20px;
   color: var(--heading-color);
+}
+
+footer {
+  background-color: var(--nav-bg-color);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width:700px) {
+  .container {
+    font-size: 16px;
+  }
 }
