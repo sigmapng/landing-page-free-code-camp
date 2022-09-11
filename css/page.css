@@ -2,7 +2,7 @@
   position: absolute;
   top: -100%;
   width: 100vw;
-  max-width: 1400px;
+  max-width: 1500px;
   height: 10vh;
   display: flex;
   justify-content: flex-end;
@@ -48,7 +48,7 @@
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  max-width: 1400px;
+  max-width: 1500px;
   max-height: 1000px;
   display: flex;
   justify-content: end;
@@ -56,11 +56,38 @@
   position: relative;
 }
 
-.about-us {
+.about-us-wrap {
   height: 100vh;
   width: 100%;
+  max-width: 1500px;
+  max-height: 900px;
+  background-color: var(--nav-bg-color);
+  color: var(--heading-color);
+  display: flex;
+}
+
+.about-us {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
+}
+
+.about-section-icon {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.tea-ceremony-info {
+  margin: 0;
+  padding: 20px;
+}
+
+.tea-ceremony-info * {
+  margin: 10px 0;
+}
+
+#registration-text {
+  margin-bottom: 10px;
 }
 
 .our-tea {
@@ -83,7 +110,7 @@
   margin: 2px;
 }
 
-.tea-carousel {
+.tea-items-block {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -138,7 +165,7 @@
   transform: translate(-50%, -50%);
   width: 55vw;
   height: 65vh;
-  max-width: 1400px;
+  max-width: 1500px;
   max-height: 900px;
   background-color: var(--nav-bg-color);
   display: flex;
